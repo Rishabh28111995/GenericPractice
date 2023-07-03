@@ -4,7 +4,7 @@ public class MaximumNumber
 {
     public static T FindMax<T>(T numOne, T numTwo, T numThree) where T : IComparable
     {
-        T max = num1;
+        T max = numOne;
         if (numTwo.CompareTo(max) > 0)
         {
             max = numTwo;
