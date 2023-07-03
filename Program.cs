@@ -2,16 +2,16 @@
 
 public class MaximumNumber
 {
-    public static T FindMax<T>(T num1, T num2, T num3) where T : IComparable
+    public static T FindMax<T>(T numOne, T numTwo, T numThree) where T : IComparable
     {
-        T max = num1;
+        T max = numOne;
         if (num2.CompareTo(max) > 0)
         {
-            max = num2;
+            max = numTwo;
         }
-        if (num3.CompareTo(max) > 0)
+        if (numThree.CompareTo(max) > 0)
         {
-            max = num3;
+            max = numThree;
         }
         return max;
     }
@@ -22,22 +22,22 @@ public class Program
 {
     public static void Main()
     {
-        int test1Num1 = 50;
-        int test1Num2 = 10;
-        int test1Num3 = 7;
-        int test1Max = MaximumNumber.FindMax(test1Num1, test1Num2, test1Num3);
+        int test1NumOne = 50;
+        int test1NumTwo = 10;
+        int test1NumThree = 7;
+        int test1Max = MaximumNumber.FindMax(test1NumOne, test1NumTwo, test1NumThree);
         Console.WriteLine($"Test Case 1: {test1Max}");
 
-        int test2Num1 = 20;
-        int test2Num2 = 40;
-        int test2Num3 = 7;
-        int test2Max = MaximumNumber.FindMax(test2Num1, test2Num2, test2Num3);
+        int test2NumOne = 20;
+        int test2NumTwo = 40;
+        int test2NumThree = 7;
+        int test2Max = MaximumNumber.FindMax(test2NumOne, test2NumTwo, test2NumThree);
         Console.WriteLine($"Test Case 2: {test2Max}");
 
-        int test3Num1 = 5;
-        int test3Num2 = 10;
-        int test3Num3 = 30;
-        int test3Max = MaximumNumber.FindMax(test3Num1, test3Num2, test3Num3);
+        int test3NumOne = 5;
+        int test3NumTwo = 10;
+        int test3NumThree = 30;
+        int test3Max = MaximumNumber.FindMax(test3NumOne, test3NumTwo, test3NumThree);
         Console.WriteLine($"Test Case 3: {test3Max}");
     }
 }
