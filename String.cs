@@ -1,16 +1,16 @@
 ﻿namespace StringCase;
 class MaxString
 {
-    public static T FindMax<T>(T num1, T num2, T num3) where T : IComparable
+    public static T FindMax<T>(T numOne, T numTwo, T numThree) where T : IComparable
     {
-        T max = num1;
-        if (num2.CompareTo(max) > 0)
+        T max = numOne;
+        if (numTwo.CompareTo(max) > 0)
         {
-            max = num2;
+            max = numTwo;
         }
-        if (num3.CompareTo(max) > 0)
+        if (numThree.CompareTo(max) > 0)
         {
-            max = num3;
+            max = numThree;
         }
         return max;
     }
@@ -20,8 +20,8 @@ public class Program
 {
     public static void Main()
     {
-        string max1 = MaxString.FindMax("Apple", "Peach", "Banana");
-        Console.WriteLine($"Max. string is : {max1}");
+        string maxOne = MaxString.FindMax("Apple", "Peach", "Banana");
+        Console.WriteLine($"Max. string is : {maxOne}");
 
     }
 }
